@@ -11,7 +11,7 @@ provider aws {
 }
 
 resource "aws_cloudfront_cache_policy" "cache_policy" {
-  name = "caching-optimized-lacy"
+  name = "caching-optimized-lacy-page"
   min_ttl = 1
   max_ttl = 315360000
   default_ttl = 86400
@@ -35,7 +35,7 @@ resource "aws_cloudfront_cache_policy" "cache_policy" {
 }
 
 resource "aws_cloudfront_response_headers_policy" "headers_policy" {
-  name = "security-headers-policy"
+  name = "security-headers-policy-lacy-page"
 
   custom_headers_config {
     items {

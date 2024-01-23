@@ -84,11 +84,11 @@ data "aws_acm_certificate" "certificate" {
 }
 
 data "aws_cloudfront_cache_policy" "cache_policy" {
-  name = "caching-optimized"
+  name = "caching-optimized-lacy-page"
 }
 
 data "aws_cloudfront_response_headers_policy" "headers_policy" {
-  name = "security-headers-policy"
+  name = "security-headers-policy-lacy-page"
 }
 
 resource "aws_cloudfront_distribution" "distribution" {
