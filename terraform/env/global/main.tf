@@ -11,7 +11,7 @@ provider aws {
 }
 
 resource "aws_cloudfront_cache_policy" "cache_policy" {
-  name = "caching-optimized"
+  name = "caching-optimized-lacy"
   min_ttl = 1
   max_ttl = 315360000
   default_ttl = 86400
