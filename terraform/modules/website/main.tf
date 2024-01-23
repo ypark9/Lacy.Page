@@ -23,6 +23,7 @@ locals {
     woff = "font/woff"
     woff2 = "font/woff2"
     xml = "text/xml"
+    svg = "image/svg"
   }
   upload_directory = "${path.root}/../../../public/"
   index_page = "index.html"
