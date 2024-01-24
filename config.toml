@@ -33,7 +33,7 @@ uglyURLs = true
   customHeadHTML = ""
 
   # Keywords relevant for SEO
-  metaKeywords = ["blog", "gokarna", "hugo"]
+  metaKeywords = ["blog"]
 
   # If you want to display posts on the homepage, the options are
   # "popular" (order posts by weight), "recent" (order posts by date)
@@ -41,7 +41,7 @@ uglyURLs = true
   showPostsOnHomePage = "recent"
 
   # Footer text
-  footer = "YOPA co."
+  footer = "YOPA"
 
 [menu]
   [[menu.main]]
