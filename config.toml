@@ -10,7 +10,7 @@ theme = "gokarna"
 enableRobotsTXT = true
 
 # Ensure pretty URLs
-uglyURLs = false
+uglyURLs = true
 
 [params]
   # URL for the avatar on homepage
@@ -48,7 +48,7 @@ uglyURLs = false
     # Unique identifier for a menu item
     identifier = "posts"
 
-    url = "/posts/"
+    url = "/posts.html"
     
     # You can add extra information before the name (HTML format is supported), such as icons
     pre = ""
@@ -65,13 +65,13 @@ uglyURLs = false
   [[menu.main]]
     name = "Resume"
     pre = ""
-    url = "/resume/"
+    url = "/resume.html"
     weight = 2
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
-    url = "/tags/"
+    url = "/tags.html"
     weight = 3
     
   # [[menu.main]]
