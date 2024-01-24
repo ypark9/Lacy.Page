@@ -8,6 +8,10 @@ theme = "gokarna"
 
 # Automatically generate robots.txt
 enableRobotsTXT = true
+
+# Ensure pretty URLs
+uglyURLs = false
+
 [params]
   # URL for the avatar on homepage
   avatarURL = "/images/hZL49G.png"
