@@ -13,7 +13,7 @@ $(foreach bin,$(REQUIRED_BINS),\
 all: build optimize deploy invalidate
 
 build:
-	$(HUGO) --gc --minify
+	$(HUGO)
 
 optimize: exif webp
 
