@@ -54,7 +54,7 @@ plan:
 	$(TERRAFORM) plan
 
 apply:
-	$(TERRAFORM) apply -auto-approve -var="environment=blue"
+	$(TERRAFORM) apply -auto-approve
 
 deploy: init validate plan apply
 
