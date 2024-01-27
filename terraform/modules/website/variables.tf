@@ -12,6 +12,7 @@ variable "error_page_path" {
 }
 
 variable "environment" {
-  type = string
-  default = "blue"
+  description = "The deployment environment (blue/green)"
+  type        = string
+  default     = "blue"
 }
