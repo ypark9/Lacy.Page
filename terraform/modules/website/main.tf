@@ -94,7 +94,7 @@ data "aws_cloudfront_response_headers_policy" "headers_policy" {
 }
 
 resource "aws_cloudfront_distribution" "distribution" {
-  aliases = [for name in var.domain_names : "${name}-${var.environment}"]
+  aliases = [for name in var.domain_names : "${name}"]
   enabled = true
   default_root_object = local.index_page
 
