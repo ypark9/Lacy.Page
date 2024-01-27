@@ -32,8 +32,14 @@ locals {
 
 resource "aws_cloudfront_origin_access_identity" "identity" {}
 
+variable "environment" {
+  description = "The deployment environment (blue/green)"
+  type        = string
+  default     = "blue"
+}
+
 resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket_name
+  bucket = "website-${var.environment}-${var.bucket_name}"
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
