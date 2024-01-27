@@ -10,3 +10,8 @@ variable "error_page_path" {
   type = string
   default = "/404.html"
 }
+
+variable "environment" {
+  type = string
+  default = "blue"
+}
