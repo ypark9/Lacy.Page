@@ -33,7 +33,7 @@ locals {
 resource "aws_cloudfront_origin_access_identity" "identity" {}
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "website-${var.environment}-${var.bucket_name}"
+  bucket = "website-${var.bucket_name}-${var.environment}"
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
@@ -94,7 +94,7 @@ data "aws_cloudfront_response_headers_policy" "headers_policy" {
 }
 
 resource "aws_cloudfront_distribution" "distribution" {
-  aliases = var.domain_names
+  aliases = [for name in var.domain_names : "${name}-${var.environment}"]
   enabled = true
   default_root_object = local.index_page
 
