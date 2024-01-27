@@ -13,7 +13,7 @@ provider aws {
 module "website" {
   source = "../../modules/website"
   bucket_name = "lacy.page"
-  domain_names = ["lacy.page", "www.lacy.page", "*.lacy.page"]
+  domain_names = ["lacy.page", "www.lacy.page", "blue.lacy.page", "green.lacy.page"]
 }
 
 output "cloudfront_distribution_id" {
